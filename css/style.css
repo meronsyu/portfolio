@@ -1,0 +1,260 @@
+/* ヘッダー全体を横並びに */
+header {
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* ナビゲーションリンクを横に並べる */
+  header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ffc107;
+  }
+  
+  /* 浮遊猫のスタイル */
+  .floating-cat {
+    width: 80px;
+    animation: floatCatVertical 2.5s infinite ease-in-out alternate;
+  }
+  
+  /* 猫を上下に浮遊させるアニメーション */
+  @keyframes floatCatVertical {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(10px); }
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-around;
+  }
+  
+  nav ul li a {
+    color: #FFD700;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
+  
+  .floating-cat {
+    width: 80px;
+    transition: transform 0.3s ease;
+  }
+  
+  .floating-cat:hover {
+    transform: scale(1.1);
+  }
+  
+  /* フェードインアニメーション用CSS */
+  .fade-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .fade-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .skills {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: left;
+  }
+  
+  .skill p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  
+  .bar div {
+    background-color: #ffc107;
+    color: white;
+    padding: 5px;
+    text-align: right;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+  }
+  
+  .article-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+  }
+  
+  .article-item h2 a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .article-item p {
+    margin: 5px 0;
+  }
+  
+
+  #追加
+  .hero {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #ffc107;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #ffc107;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #ffc107;
+  }
+  
+/* 猫画像スタイルへのこだわり（中央寄せ・空白調整） */
+.hero-img {
+    display: block;              /* 中央配置のためにblock化 */
+    margin: 30px auto;           /* 上下に30pxの空白、左右autoで中央配置 */
+    width: 280px;                /* 幅は変わらず */
+    border-radius: 15px;         /* 丸みを帯びた角 */
+    box-shadow: 0 8px 15px rgba(233, 252, 62, 0.788);  /* 柔らかな影 */
+  }
+  
+
+  .work {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  #github-projects {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    width: calc(50% - 10px);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  }
+  
+  .cat-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cat-container img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  }
+  
+  .portfolio {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .portfolio h1 {
+    margin-bottom: 30px;
+    color: #343a40;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .portfolio-card {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .skills {
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  
+  .skill-bar div {
+    background: linear-gradient(to right, #ffd700, #ffc107);
+    color: white;
+    padding: 5px;
+    text-align: right;
+    border-radius: 20px;
+    transition: width 1.2s ease;
+  }
+  
+  /* 猫画像のスタイル調整 */
+  .skill-cat {
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(255,215,0,0.4);
+  }
+
+  
