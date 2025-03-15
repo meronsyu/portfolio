@@ -25,6 +25,13 @@ header {
   header nav ul li a:hover {
     color: #ffc107;
   }
+
+  footer {
+    color: #ffc107;
+    text-align: center;
+    background-color: #343a40;
+    padding: 1em 2em;
+  }
   
   /* 浮遊猫のスタイル */
   .floating-cat {
@@ -34,8 +41,8 @@ header {
   
   /* 猫を上下に浮遊させるアニメーション */
   @keyframes floatCatVertical {
-    from { transform: translateY(-10px); }
-    to { transform: translateY(10px); }
+    from { transform: translateY(-20px); }
+    to { transform: translateY(5px); }
   }
   
 
@@ -82,6 +89,15 @@ body {
     transform: translateY(0);
   }
   
+  /*SKillsのページ*/
+
+  .skill-category {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+  }
+
   .skills {
     width: 80%;
     max-width: 600px;
@@ -141,15 +157,17 @@ body {
     font-size: 1.2rem;
     margin-bottom: 25px;
     color: #ffc107;
+    text-align: center;
+    padding: 1em;
   }
   
 /* 猫画像スタイルへのこだわり（中央寄せ・空白調整） */
 .hero-img {
     display: block;              /* 中央配置のためにblock化 */
-    margin: 30px auto;           /* 上下に30pxの空白、左右autoで中央配置 */
+    margin: 5em auto;           /* 上下に30pxの空白、左右autoで中央配置 */
     width: 280px;                /* 幅は変わらず */
-    border-radius: 15px;         /* 丸みを帯びた角 */
     box-shadow: 0 8px 15px rgba(233, 252, 62, 0.788);  /* 柔らかな影 */
+    border-radius: 30%;
   }
   
 
@@ -158,14 +176,20 @@ body {
     max-width: 900px;
     margin: 50px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 40px;
     justify-content: space-between;
   }
   
+  .work-category {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+  }
   #github-projects {
     flex: 2;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     gap: 20px;
   }
@@ -197,35 +221,6 @@ body {
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
   }
   
-  .portfolio {
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
-  }
-  
-  .portfolio h1 {
-    margin-bottom: 30px;
-    color: #343a40;
-  }
-  
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-  }
-  
-  .portfolio-card {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-  }
-  
-  .portfolio-card:hover {
-    transform: translateY(-5px);
-  }
-
   .skills {
     width: 80%;
     max-width: 700px;
